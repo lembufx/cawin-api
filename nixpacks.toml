@@ -1,0 +1,10 @@
+[build]
+  # Use the appropriate Nix package for PHP 8.3
+  runtime = "php-8.3"
+
+[runtime]
+  # Define the runtime environment for PHP
+  command = "php-fpm -y /etc/php-fpm.conf && nginx -c /etc/nginx/nginx.conf"
+
+[env]
+  # Specify any environment variables if required by your PHP application.
